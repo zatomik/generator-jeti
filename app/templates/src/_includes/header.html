@@ -1,0 +1,27 @@
+<header class="site-header">
+    <nav class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle></button>
+        <div class="title-bar-title">Menu</div>
+    </nav>
+
+    <nav class="top-bar" id="main-menu">
+        <div class="top-bar-left">
+            <ul class="dropdown vertical medium-horizontal menu" data-dropdown-menu>
+                <li class="menu-text"><a href="/">{{ site.title }}</a></li>
+                {% for my_page in site.pages %}
+                    {% if my_page.title %}
+                        <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="top-bar-right">
+            <ul class="menu">
+                <li><input type="search" placeholder="Search"></li>
+                <li>
+                    <button type="button" class="button">Search</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>

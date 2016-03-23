@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<div class="home">
+
+    <div class="intro-wrap">
+        <div class="row intro">
+            <div class="medium-7 large-8 columns">
+                <h1>Welcome to Jeti.</h1>
+
+                <p class="subheader">Jeti is a simple build system to create fast and optimized static sites which are
+                    blog aware. It leverages all the great features of Jekyll and Foundation 6 and wraps it in handy
+                    Yeoman Generator.</p>
+                <p class="subheader">To find out more check out the documentation for Foundation and Jekyll below, or
+                    have a look over the demo blog posts on this site.</p>
+                <p class="subheader">Feel free to report bugs, issues and PRs to the <a href="#">Github</a> page</p>
+                <br>
+                <br>
+                <a href="http://foundation.zurb.com/sites/docs/" target="_blank" class="button">Foundation Docs</a>
+                <a href="http://jekyllrb.com/docs/home/" target="_blank" class="button">Jekyll Docs</a>
+            </div>
+            <div class="show-for-large large-4 columns">
+                <img src="assets/img/logo1.png" alt="Foundation Yeti">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="large-8 columns">
+
+            {% capture tips-include %}{% include tips.md %}{% endcapture %}
+            {{ tips-include | markdownify }}
+
+        </div>
+        <div class="large-4 columns">
+            <h3>Recent Posts</h3>
+            {% include recent-posts.html %}
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="large-12 columns"><p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend:
+            site.baseurl }}">via RSS</a></p></div>
+    </div>
+
+</div>

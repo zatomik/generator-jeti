@@ -1,0 +1,33 @@
+{
+  "name": "generator-jeti",
+  "version": "1.0.20",
+  "description": "A Yeoman generator for building blog-aware static sites with Jekyll and Foundation 6",
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "zatomik/generator-jeti"
+  },
+  "homepage": "https://github.com/zatomik/generator-jeti",
+  "author": {
+    "name": "zatomik",
+    "email": "dev@orz.co.za",
+    "url": "https://github.com/zatomik"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "yeoman-generator",
+    "Jekyll",
+    "Foundation",
+    "Gulp",
+    "SCSS"
+  ],
+  "dependencies": {
+    "chalk": "^1.1.1",
+    "moment": "^2.12.0",
+    "yeoman-generator": "^0.22.5",
+    "yosay": "^1.1.0"
+  }
+}

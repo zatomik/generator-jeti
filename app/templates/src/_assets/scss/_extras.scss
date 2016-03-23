@@ -1,0 +1,106 @@
+/* Additional styles */
+
+/**
+ * Misc layout
+ */
+
+.content-wrap {
+  min-height: 900px;
+}
+
+.menu-text a {
+  color: $body-font-color;
+  &:hover {
+    color: $secondary-color;
+  }
+  padding: 0 !important;
+}
+
+.intro {
+  margin-bottom: 20px;
+}
+
+.intro-wrap {
+  background: url('../img/brick.png');
+  border-top: 1px #cccccc solid;
+  border-bottom: 1px #cccccc solid;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-wrap {
+  background: #cccccc;
+  padding-top: 15px;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  margin-left: 0;
+}
+
+.icon {
+
+  > svg {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+
+    path {
+      fill: #444;
+    }
+  }
+}
+
+/**
+  * Nav
+ */
+
+.top-bar {
+  background: #eeeeee;
+  a {
+    color: $primary-color
+  }
+  a:hover {
+    color: darken($primary-color, 20%);
+  }
+}
+
+/**
+ * Posts
+ */
+
+.post-meta {
+  color: #888888;
+  font-size: rem-calc(12);
+}
+
+/**
+ * Code formatting
+ */
+
+pre,
+code {
+  font-size: 15px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  background-color: #eef;
+}
+
+code {
+  padding: 1px 5px;
+}
+
+pre {
+  padding: 8px 12px;
+  overflow-x: auto;
+
+  > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

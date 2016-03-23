@@ -1,0 +1,19 @@
+<ul>
+    {% for post in site.posts %}
+    <li>
+        <div class="row">
+            <div class="small-2 columns">
+                {% assign image = post.images[0] %}
+                {% include image.html image=image %}
+            </div>
+            <div class="small-10 columns">
+                <h4>
+                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </h4>
+            </div>
+        </div>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <hr>
+    </li>
+    {% endfor %}
+</ul>
