@@ -1,6 +1,6 @@
 {
   "name": "generator-jeti",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "description": "A Yeoman generator for building blog-aware static sites with Jekyll and Foundation 6",
   "license": "MIT",
   "main": "app/index.js",
@@ -25,9 +25,9 @@
     "SCSS"
   ],
   "dependencies": {
-    "chalk": "^1.1.1",
-    "moment": "^2.12.0",
-    "yeoman-generator": "^0.22.5",
+    "chalk": "^1.1.3",
+    "moment": "^2.13.0",
+    "yeoman-generator": "^0.22.6",
     "yosay": "^1.1.0"
   }
 }
